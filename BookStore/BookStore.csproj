@@ -139,27 +139,27 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Infra\Infra.Authentications\Infra.Authentications.csproj">
+    <ProjectReference Include="..\Infra\Infra.Authentications\Infra.Authentications.csproj">
       <Project>{0114898a-afcb-409c-935c-815d66b8055b}</Project>
       <Name>Infra.Authentications</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Infra\Infra.Events\Infra.Events.csproj">
+    <ProjectReference Include="..\Infra\Infra.Events\Infra.Events.csproj">
       <Project>{1f945abe-f634-4a2b-9ea5-52c7696cbc94}</Project>
       <Name>Infra.Events</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Infra\Infra.IoC\Infra.IoC.csproj">
+    <ProjectReference Include="..\Infra\Infra.IoC\Infra.IoC.csproj">
       <Project>{70f90331-b8de-4ce9-9866-79ed810e3561}</Project>
       <Name>Infra.IoC</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Infra\Infra.Logs\Infra.Logs.csproj">
+    <ProjectReference Include="..\Infra\Infra.Logs\Infra.Logs.csproj">
       <Project>{36757b22-00e5-464c-b946-3cfc03184576}</Project>
       <Name>Infra.Logs</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Infra\Infra.Mixins\Infra.Mixins.csproj">
+    <ProjectReference Include="..\Infra\Infra.Mixins\Infra.Mixins.csproj">
       <Project>{0d05724d-2b92-4f09-a53f-044e450ba106}</Project>
       <Name>Infra.Mixins</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Infra\Infra\Infra.csproj">
+    <ProjectReference Include="..\Infra\Infra\Infra.csproj">
       <Project>{b120d3b2-b734-4a4c-98bc-9d03abcf5419}</Project>
       <Name>Infra</Name>
     </ProjectReference>
