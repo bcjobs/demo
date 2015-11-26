@@ -19,6 +19,7 @@ namespace Demo.Web.Controllers
 
         IBookCatalog Catalog { get; }
 
+        [Route()]
         [HttpGet]
         public IEnumerable<Book> Get([FromUri] BookQuery query)
         {
@@ -33,6 +34,7 @@ namespace Demo.Web.Controllers
             return Catalog.Read(id);
         }
 
+        [Route()]
         [HttpPost]
         public Book Post([FromBody] Book book)
         {

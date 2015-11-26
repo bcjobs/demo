@@ -9,9 +9,11 @@ namespace BookStore.EF6.Services
 {
     public class BookReader : IBookReader
     {
+        IQueryable<EBook> EBooks => new StoreContext().Books.Include("Authors").AsNoTracking();
+
         public IEnumerable<Book> Read(BookQuery query)
         {
-            var books = from b in new StoreContext().Books.AsNoTracking()
+            var books = from b in EBooks
                         where b.PublishedAt >= query.After
                         where b.PublishedAt < query.Before
                         where query.Author == null || b.Authors.Any(a => a.Name.Contains(query.Author))
@@ -28,8 +30,7 @@ namespace BookStore.EF6.Services
 
         public Book Read(int id)
         {
-            return new StoreContext()
-                .Books
+            return EBooks
                 .AsEnumerable()
                 .Select(Book)
                 .FirstOrDefault();

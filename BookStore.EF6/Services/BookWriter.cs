@@ -11,6 +11,8 @@ namespace BookStore.EF6.Services
 {
     public class BookWriter : IBookWriter
     {
+        IQueryable<EBook> EBooks => new StoreContext().Books.Include("Authors");
+
         public BookWriter(IClock clock)
         {
             Clock = clock;
@@ -38,7 +40,7 @@ namespace BookStore.EF6.Services
 
         EBook EBook(StoreContext context, Book book)
         {
-            var eBook = context.Books.FirstOrDefault(b => b.Id == book.Id);
+            var eBook = EBooks.FirstOrDefault(b => b.Id == book.Id);
             if (eBook != null)
                 return eBook;
 
