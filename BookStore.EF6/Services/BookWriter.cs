@@ -38,7 +38,7 @@ namespace BookStore.EF6.Services
 
         EBook EBook(StoreContext context, Book book)
         {
-            var eBook = context.Books.FirstOrDefault(b => b.Id == book.Id);
+            var eBook = EBooks.FirstOrDefault(b => b.Id == book.Id);
             if (eBook != null)
                 return eBook;
 
@@ -56,5 +56,8 @@ namespace BookStore.EF6.Services
             eAuthor = new EAuthor { Name = name };
             return eAuthor;
         }
+
+        IQueryable<EBook> EBooks => new StoreContext().Books.Include("Authors");
+
     }
 }
