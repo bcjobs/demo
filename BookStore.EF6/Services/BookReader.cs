@@ -9,8 +9,6 @@ namespace BookStore.EF6.Services
 {
     public class BookReader : IBookReader
     {
-        IQueryable<EBook> EBooks => new StoreContext().Books.Include("Authors").AsNoTracking();
-
         public IEnumerable<Book> Read(BookQuery query)
         {
             var books = from b in EBooks
@@ -47,5 +45,8 @@ namespace BookStore.EF6.Services
                 eBook.Authors.Select(a => a.Name)
             );
         }
+
+        IQueryable<EBook> EBooks => new StoreContext().Books.Include("Authors").AsNoTracking();
+
     }
 }
