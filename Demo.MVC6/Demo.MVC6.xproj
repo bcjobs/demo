@@ -20,6 +20,9 @@
     <DnxInvisibleContent Include="package.json" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BookStore.Alerts\BookStore.Alerts.csproj" />
+    <ProjectReference Include="..\BookStore.EF6\BookStore.EF6.csproj" />
+    <ProjectReference Include="..\BookStore\BookStore.csproj" />
     <ProjectReference Include="..\Infra\Infra.Authentications.Identity\Infra.Authentications.Identity.csproj" />
     <ProjectReference Include="..\Infra\Infra.Authentications\Infra.Authentications.csproj" />
     <ProjectReference Include="..\Infra\Infra.Events\Infra.Events.csproj" />

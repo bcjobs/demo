@@ -20,6 +20,9 @@
   "frameworks": {
     "dnx46": {
       "dependencies": {
+        "BookStore": "1.0.0-*",
+        "BookStore.Alerts": "1.0.0-*",
+        "BookStore.EF6": "1.0.0-*",
         "Infra": "1.0.0-*",
         "Infra.Authentications": "1.0.0-*",
         "Infra.Authentications.Identity": "1.0.0-*",

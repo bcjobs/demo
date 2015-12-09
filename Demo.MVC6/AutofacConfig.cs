@@ -49,6 +49,9 @@ namespace Demo.MVC6
                         .InstancePerDependency();
                 });
 
+            builder.RegisterType<BookStore.EF6.Services.BookReader>()
+                .AsImplementedInterfaces().InstancePerLifetimeScope();
+
             Types.Referenced.With<MixinAttribute>()
                 .ForAll(t => builder
                     .RegisterType(Mixin.Emit(t))

@@ -1,0 +1,20 @@
+{
+  "version": "1.0.0-*",
+  "frameworks": {
+    "net46": {
+      "wrappedProject": "../../BookStore/BookStore.csproj",
+      "bin": {
+        "assembly": "../../BookStore/obj/{configuration}/BookStore.dll",
+        "pdb": "../../BookStore/obj/{configuration}/BookStore.pdb"
+      },
+      "dependencies": {
+        "Infra.Authentications": "1.0.0-*",
+        "Infra.Events": "1.0.0-*",
+        "Infra.IoC": "1.0.0-*",
+        "Infra.Logs": "1.0.0-*",
+        "Infra.Mixins": "1.0.0-*",
+        "Infra": "1.0.0-*"
+      }
+    }
+  }
+}

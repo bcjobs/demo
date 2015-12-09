@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0-*",
+  "frameworks": {
+    "net46": {
+      "wrappedProject": "../../BookStore.Alerts/BookStore.Alerts.csproj",
+      "bin": {
+        "assembly": "../../BookStore.Alerts/obj/{configuration}/BookStore.Alerts.dll",
+        "pdb": "../../BookStore.Alerts/obj/{configuration}/BookStore.Alerts.pdb"
+      },
+      "dependencies": {
+        "Infra.Authentications": "1.0.0-*",
+        "Infra.Events": "1.0.0-*",
+        "Infra.IoC": "1.0.0-*",
+        "Infra.Logs": "1.0.0-*",
+        "Infra.Mixins": "1.0.0-*",
+        "Infra": "1.0.0-*",
+        "BookStore": "1.0.0-*"
+      }
+    }
+  }
+}
