@@ -26,7 +26,7 @@ namespace Demo.MVC6
                     builder
                         .RegisterType(t)
                         .AsImplementedInterfaces()
-                        .InstancePerRequest();
+                        .InstancePerLifetimeScope();
                 });
 
             Types.Referenced.KindOf("Services.Singletons")
