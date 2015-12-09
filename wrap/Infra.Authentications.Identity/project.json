@@ -1,0 +1,31 @@
+{
+  "version": "1.0.0-*",
+  "frameworks": {
+    "net46": {
+      "wrappedProject": "../../Infra/Infra.Authentications.Identity/Infra.Authentications.Identity.csproj",
+      "bin": {
+        "assembly": "../../Infra/Infra.Authentications.Identity/obj/{configuration}/Infra.Authentications.Identity.dll",
+        "pdb": "../../Infra/Infra.Authentications.Identity/obj/{configuration}/Infra.Authentications.Identity.pdb"
+      },
+      "dependencies": {
+        "EntityFramework": "6.1.3",
+        "Microsoft.AspNet.Identity.Core": "2.2.1",
+        "Microsoft.AspNet.Identity.EntityFramework": "2.2.1",
+        "Microsoft.AspNet.Identity.Owin": "2.2.1",
+        "Microsoft.Owin": "3.0.1",
+        "Microsoft.Owin.Host.SystemWeb": "3.0.1",
+        "Microsoft.Owin.Security": "3.0.1",
+        "Microsoft.Owin.Security.Cookies": "3.0.1",
+        "Microsoft.Owin.Security.OAuth": "3.0.1",
+        "Newtonsoft.Json": "7.0.1",
+        "Owin": "1.0",
+        "Infra.Authentications": "1.0.0-*",
+        "Infra.Events": "1.0.0-*",
+        "Infra.IoC": "1.0.0-*",
+        "Infra.Logs": "1.0.0-*",
+        "Infra.Mixins": "1.0.0-*",
+        "Infra": "1.0.0-*"
+      }
+    }
+  }
+}

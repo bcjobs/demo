@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0-*",
+  "frameworks": {
+    "net46": {
+      "wrappedProject": "../../Infra/Infra.Events/Infra.Events.csproj",
+      "bin": {
+        "assembly": "../../Infra/Infra.Events/obj/{configuration}/Infra.Events.dll",
+        "pdb": "../../Infra/Infra.Events/obj/{configuration}/Infra.Events.pdb"
+      },
+      "dependencies": {
+        "Infra.IoC": "1.0.0-*"
+      }
+    }
+  }
+}

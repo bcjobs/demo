@@ -1,0 +1,22 @@
+{
+  "version": "1.0.0-*",
+  "frameworks": {
+    "net46": {
+      "wrappedProject": "../../Infra/Infra.Logs.EF6/Infra.Logs.EF6.csproj",
+      "bin": {
+        "assembly": "../../Infra/Infra.Logs.EF6/obj/{configuration}/Infra.Logs.EF6.dll",
+        "pdb": "../../Infra/Infra.Logs.EF6/obj/{configuration}/Infra.Logs.EF6.pdb"
+      },
+      "dependencies": {
+        "EntityFramework": "6.1.3",
+        "Newtonsoft.Json": "7.0.1",
+        "Infra.Authentications": "1.0.0-*",
+        "Infra.Events": "1.0.0-*",
+        "Infra.IoC": "1.0.0-*",
+        "Infra.Logs": "1.0.0-*",
+        "Infra.Mixins": "1.0.0-*",
+        "Infra": "1.0.0-*"
+      }
+    }
+  }
+}

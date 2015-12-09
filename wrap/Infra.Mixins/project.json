@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0-*",
+  "frameworks": {
+    "net46": {
+      "wrappedProject": "../../Infra/Infra.Mixins/Infra.Mixins.csproj",
+      "bin": {
+        "assembly": "../../Infra/Infra.Mixins/obj/{configuration}/Infra.Mixins.dll",
+        "pdb": "../../Infra/Infra.Mixins/obj/{configuration}/Infra.Mixins.pdb"
+      }
+    }
+  }
+}

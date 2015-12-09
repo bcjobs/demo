@@ -5,6 +5,8 @@
   },
 
   "dependencies": {
+    "Autofac": "4.0.0-rc1-177",
+    "Autofac.Extensions.DependencyInjection": "4.0.0-rc1-177",
     "Microsoft.AspNet.IISPlatformHandler": "1.0.0-rc1-final",
     "Microsoft.AspNet.Mvc": "6.0.0-rc1-final",
     "Microsoft.AspNet.Server.Kestrel": "1.0.0-rc1-final",
@@ -16,7 +18,18 @@
   },
 
   "frameworks": {
-    "dnx46": { }
+    "dnx46": {
+      "dependencies": {
+        "Infra": "1.0.0-*",
+        "Infra.Authentications": "1.0.0-*",
+        "Infra.Authentications.Identity": "1.0.0-*",
+        "Infra.Events": "1.0.0-*",
+        "Infra.IoC": "1.0.0-*",
+        "Infra.Logs": "1.0.0-*",
+        "Infra.Logs.EF6": "1.0.0-*",
+        "Infra.Mixins": "1.0.0-*"
+      }
+    }
   },
 
   "exclude": [

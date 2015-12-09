@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0-*",
+  "frameworks": {
+    "net46": {
+      "wrappedProject": "../../Infra/Infra.Authentications/Infra.Authentications.csproj",
+      "bin": {
+        "assembly": "../../Infra/Infra.Authentications/obj/{configuration}/Infra.Authentications.dll",
+        "pdb": "../../Infra/Infra.Authentications/obj/{configuration}/Infra.Authentications.pdb"
+      },
+      "dependencies": {
+        "Infra.Events": "1.0.0-*",
+        "Infra.IoC": "1.0.0-*",
+        "Infra.Logs": "1.0.0-*",
+        "Infra": "1.0.0-*"
+      }
+    }
+  }
+}

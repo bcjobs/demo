@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0-*",
+  "frameworks": {
+    "net46": {
+      "wrappedProject": "../../Infra/Infra.Logs/Infra.Logs.csproj",
+      "bin": {
+        "assembly": "../../Infra/Infra.Logs/obj/{configuration}/Infra.Logs.dll",
+        "pdb": "../../Infra/Infra.Logs/obj/{configuration}/Infra.Logs.pdb"
+      },
+      "dependencies": {
+        "Infra.Events": "1.0.0-*",
+        "Infra.IoC": "1.0.0-*",
+        "Infra.Mixins": "1.0.0-*",
+        "Infra": "1.0.0-*"
+      }
+    }
+  }
+}

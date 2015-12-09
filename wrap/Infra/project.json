@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0-*",
+  "frameworks": {
+    "net46": {
+      "wrappedProject": "../../Infra/Infra/Infra.csproj",
+      "bin": {
+        "assembly": "../../Infra/Infra/obj/{configuration}/Infra.dll",
+        "pdb": "../../Infra/Infra/obj/{configuration}/Infra.pdb"
+      },
+      "dependencies": {
+        "Infra.IoC": "1.0.0-*"
+      }
+    }
+  }
+}
