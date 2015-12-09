@@ -10,7 +10,7 @@ namespace Demo.MVC6.Controllers.Web
     {
         public IActionResult Index()
         {
-            return Content("Hello!!!");
+            return Content(Startup.Configuration["AppSettings:Greeting"]);
         }
     }
 }
