@@ -27,22 +27,30 @@ namespace Demo.Web
                 .Classes()
                 .ForAll(t =>
                 {
-                    if (t.IsGenericType)
-                        builder
-                            .RegisterGeneric(t)
-                            .AsImplementedInterfaces();
-                    else
-                    {
-                        builder
-                            .RegisterType(t)
-                            .AsSelf();
-                        t
-                            .GetInterfaces()
-                            .ForAll(i => builder
-                                .RegisterType(WrapperFactory.Emit(i))
-                                .WithParameter((pi, ctx) => true, (pi, ctx) => ctx.Resolve(t))
-                                .AsImplementedInterfaces());
-                    }
+                    builder
+                        .RegisterType(t)
+                        .AsImplementedInterfaces()
+                        .InstancePerRequest();
+                });
+
+            Types.Referenced.KindOf("Services.Singletons")
+                .Classes()
+                .ForAll(t =>
+                {
+                    builder
+                        .RegisterType(t)
+                        .AsImplementedInterfaces()
+                        .SingleInstance();
+                });
+
+            Types.Referenced.KindOf("Services.Transient")
+                .Classes()
+                .ForAll(t =>
+                {
+                    builder
+                        .RegisterType(t)
+                        .AsImplementedInterfaces()
+                        .InstancePerDependency();
                 });
 
             Types.Referenced.With<MixinAttribute>()
