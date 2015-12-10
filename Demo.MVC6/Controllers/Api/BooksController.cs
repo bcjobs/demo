@@ -13,34 +13,41 @@ namespace Demo.MVC6.Controllers.Api
     public class BooksController : Controller
     {
 
-        public BooksController(IBookReader reader)
+        public BooksController(IBookCatalog catalog)
         {
-            Reader = reader;
+            Catalog = catalog;
         }
 
-        IBookReader Reader { get; }
+        IBookCatalog Catalog { get; }
 
         [HttpGet]
-        public IActionResult Get()
+        public IEnumerable<Book> Get(BookQuery query)
         {
-            return Json(new { Foo = "Blah" });
+            query = query ?? new BookQuery();
+            return Catalog.Read(query);
         }
 
         [HttpGet("{id}")]
-        public string Get(int id)
+        public Book Get(int id)
         {
-            var book = Reader.Read(id);
-            return "value";
+            return Catalog.Read(id);
         }
 
         [HttpPost]
-        public void Post([FromBody]string value)
+        public Book Post([FromBody] Book book)
         {
+            var id = Catalog.Write(book);
+            return Catalog.Read(id);
         }
 
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
+        public Book Put(int id, [FromBody] Book book)
         {
+            if (id != book.Id)
+                throw new ArgumentException();
+
+            Catalog.Write(book);
+            return book;
         }
 
     }

@@ -16,7 +16,7 @@ namespace BookStore.EF6
 
         static StoreContext()
         {
-            Database.SetInitializer(new DropCreateDatabaseAlways<StoreContext>());
+            Database.SetInitializer(new DropCreateDatabaseIfModelChanges<StoreContext>());
         }
 
         public StoreContext() 
