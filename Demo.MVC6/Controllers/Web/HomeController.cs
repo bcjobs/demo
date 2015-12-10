@@ -21,5 +21,10 @@ namespace Demo.MVC6.Controllers.Web
         {
             return View();
         }
+
+        public IActionResult BookCatalog()
+        {
+            return ViewComponent("BookCatalog", 10);
+        }
     }
 }
