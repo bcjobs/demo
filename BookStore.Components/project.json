@@ -6,6 +6,7 @@
 
   "dependencies": {
     "Microsoft.AspNet.IISPlatformHandler": "1.0.0-rc1-final",
+    "Microsoft.AspNet.Mvc": "6.0.0-rc1-final",
     "Microsoft.AspNet.Server.Kestrel": "1.0.0-rc1-final"
   },
 
@@ -14,7 +15,11 @@
   },
 
   "frameworks": {
-    "dnx46": { }
+    "dnx46": {
+      "dependencies": {
+        "BookStore": "1.0.0-*"
+      }
+    }
   },
 
   "exclude": [
