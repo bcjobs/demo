@@ -9,6 +9,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json.Serialization;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.PlatformAbstractions;
+using Infra.IoC;
+
+[assembly: IoC]
 
 namespace Demo.MVC6
 {
