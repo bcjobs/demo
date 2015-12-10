@@ -10,6 +10,8 @@ using Newtonsoft.Json.Serialization;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.PlatformAbstractions;
 using Infra.IoC;
+using Microsoft.AspNet.Mvc.Infrastructure;
+using System.Reflection;
 
 [assembly: IoC]
 
@@ -38,6 +40,7 @@ namespace Demo.MVC6
                 {
                     options.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
                 });
+
             return AutofacConfig.Register(services);
         }
 
@@ -57,5 +60,17 @@ namespace Demo.MVC6
 
         // Entry point for the application.
         public static void Main(string[] args) => WebApplication.Run<Startup>(args);
+    }
+
+    public class AssemblyProvider : IAssemblyProvider
+    {
+        public IEnumerable<Assembly> CandidateAssemblies
+        {
+            get
+            {
+                yield return typeof(AssemblyProvider).Assembly;
+                yield return typeof(BookStore.Components.BookOfTheMonthViewComponent).Assembly;
+            }
+        }
     }
 }

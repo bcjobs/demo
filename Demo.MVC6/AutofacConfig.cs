@@ -61,6 +61,12 @@ namespace Demo.MVC6
             builder.RegisterType<ServiceProvider>()
                 .AsImplementedInterfaces();
 
+            builder.RegisterType<AssemblyProvider>()
+                .AsImplementedInterfaces();
+
+            builder.RegisterType<Microsoft.AspNet.Mvc.ViewComponents.DefaultViewComponentDescriptorProvider>()
+                .AsImplementedInterfaces();
+
             //Populate the container with services that were previously registered
             builder.Populate(services);
 
