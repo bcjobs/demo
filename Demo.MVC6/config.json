@@ -1,5 +1,8 @@
 {
   "AppSettings": {
     "Greeting": "Hello!!!"
+  },
+  "ConnectionStrings": {
+    "BookStoreEF6": "data source=localhost;Initial Catalog=Demo;Integrated Security=SSPI;"
   }
 }

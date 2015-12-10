@@ -19,43 +19,43 @@ namespace Demo.MVC6
             var builder = new ContainerBuilder();
             builder.RegisterSource(new ContravariantRegistrationSource());
 
-            Types.Referenced.KindOf("Services")
-                .Classes()
-                .ForAll(t =>
-                {
-                    builder
-                        .RegisterType(t)
-                        .AsImplementedInterfaces()
-                        .InstancePerLifetimeScope();
-                });
+            //Types.Referenced.KindOf("Services")
+            //    .Classes()
+            //    .ForAll(t =>
+            //    {
+            //        builder
+            //            .RegisterType(t)
+            //            .AsImplementedInterfaces()
+            //            .InstancePerLifetimeScope();
+            //    });
 
-            Types.Referenced.KindOf("Services.Singletons")
-                .Classes()
-                .ForAll(t =>
-                {
-                    builder
-                        .RegisterType(t)
-                        .AsImplementedInterfaces()
-                        .SingleInstance();
-                });
+            //Types.Referenced.KindOf("Services.Singletons")
+            //    .Classes()
+            //    .ForAll(t =>
+            //    {
+            //        builder
+            //            .RegisterType(t)
+            //            .AsImplementedInterfaces()
+            //            .SingleInstance();
+            //    });
 
-            Types.Referenced.KindOf("Services.Transient")
-                .Classes()
-                .ForAll(t =>
-                {
-                    builder
-                        .RegisterType(t)
-                        .AsImplementedInterfaces()
-                        .InstancePerDependency();
-                });
+            //Types.Referenced.KindOf("Services.Transient")
+            //    .Classes()
+            //    .ForAll(t =>
+            //    {
+            //        builder
+            //            .RegisterType(t)
+            //            .AsImplementedInterfaces()
+            //            .InstancePerDependency();
+            //    });
 
             builder.RegisterType<BookStore.EF6.Services.BookReader>()
                 .AsImplementedInterfaces().InstancePerLifetimeScope();
 
-            Types.Referenced.With<MixinAttribute>()
-                .ForAll(t => builder
-                    .RegisterType(Mixin.Emit(t))
-                    .As(t));
+            //Types.Referenced.With<MixinAttribute>()
+            //    .ForAll(t => builder
+            //        .RegisterType(Mixin.Emit(t))
+            //        .As(t));
 
             builder.RegisterType<ServiceProvider>()
                 .AsImplementedInterfaces();
