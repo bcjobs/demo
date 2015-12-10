@@ -16,5 +16,10 @@ namespace Demo.MVC6.Controllers.Web
 
             return Content(Startup.Configuration["AppSettings:Greeting"]);
         }
+
+        public IActionResult Library()
+        {
+            return View();
+        }
     }
 }
