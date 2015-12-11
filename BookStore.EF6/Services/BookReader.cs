@@ -29,6 +29,7 @@ namespace BookStore.EF6.Services
         public Book Read(int id)
         {
             return EBooks
+                .Where(b => b.Id == id)
                 .AsEnumerable()
                 .Select(Book)
                 .FirstOrDefault();
