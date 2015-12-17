@@ -10,6 +10,10 @@ using Newtonsoft.Json.Serialization;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.PlatformAbstractions;
 using Infra.IoC;
+using Microsoft.AspNet.Mvc.Razor;
+using Microsoft.AspNet.FileProviders;
+using BookStore.Components;
+using System.Reflection;
 
 [assembly: IoC]
 
@@ -38,6 +42,17 @@ namespace Demo.MVC6
                 {
                     options.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
                 });
+
+            services.Configure<RazorViewEngineOptions>(options =>
+            {
+                options.FileProvider = new CompositeFileProvider(
+                    new EmbeddedFileProvider(
+                        typeof(BookOfTheMonthViewComponent).GetTypeInfo().Assembly
+                    ),
+                    options.FileProvider
+                );
+            });
+
             return AutofacConfig.Register(services);
         }
 

@@ -315,10 +315,10 @@
           "lib/net451/Microsoft.AspNet.Diagnostics.Abstractions.dll": {}
         }
       },
-      "Microsoft.AspNet.FileProviders.Abstractions/1.0.0-rc1-final": {
+      "Microsoft.AspNet.FileProviders.Abstractions/1.0.0-rc2-15891": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "1.0.0-rc1-final"
+          "Microsoft.Extensions.Primitives": "1.0.0-rc2-15935"
         },
         "frameworkAssemblies": [
           "Microsoft.CSharp",
@@ -331,6 +331,42 @@
         },
         "runtime": {
           "lib/net451/Microsoft.AspNet.FileProviders.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.AspNet.FileProviders.Composite/1.0.0-rc2-15891": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.FileProviders.Abstractions": "1.0.0-rc2-15891"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net451/Microsoft.AspNet.FileProviders.Composite.dll": {}
+        },
+        "runtime": {
+          "lib/net451/Microsoft.AspNet.FileProviders.Composite.dll": {}
+        }
+      },
+      "Microsoft.AspNet.FileProviders.Embedded/1.0.0-rc2-15882": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.FileProviders.Abstractions": "1.0.0-rc2-15882"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net451/Microsoft.AspNet.FileProviders.Embedded.dll": {}
+        },
+        "runtime": {
+          "lib/net451/Microsoft.AspNet.FileProviders.Embedded.dll": {}
         }
       },
       "Microsoft.AspNet.FileProviders.Physical/1.0.0-rc1-final": {
@@ -1427,7 +1463,7 @@
           "lib/net451/Microsoft.Extensions.PlatformAbstractions.dll": {}
         }
       },
-      "Microsoft.Extensions.Primitives/1.0.0-rc1-final": {
+      "Microsoft.Extensions.Primitives/1.0.0-rc2-15935": {
         "type": "package",
         "frameworkAssemblies": [
           "Microsoft.CSharp",
@@ -2108,10 +2144,10 @@
           "lib/net451/Microsoft.AspNet.Diagnostics.Abstractions.dll": {}
         }
       },
-      "Microsoft.AspNet.FileProviders.Abstractions/1.0.0-rc1-final": {
+      "Microsoft.AspNet.FileProviders.Abstractions/1.0.0-rc2-15891": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "1.0.0-rc1-final"
+          "Microsoft.Extensions.Primitives": "1.0.0-rc2-15935"
         },
         "frameworkAssemblies": [
           "Microsoft.CSharp",
@@ -2124,6 +2160,42 @@
         },
         "runtime": {
           "lib/net451/Microsoft.AspNet.FileProviders.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.AspNet.FileProviders.Composite/1.0.0-rc2-15891": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.FileProviders.Abstractions": "1.0.0-rc2-15891"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net451/Microsoft.AspNet.FileProviders.Composite.dll": {}
+        },
+        "runtime": {
+          "lib/net451/Microsoft.AspNet.FileProviders.Composite.dll": {}
+        }
+      },
+      "Microsoft.AspNet.FileProviders.Embedded/1.0.0-rc2-15882": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.FileProviders.Abstractions": "1.0.0-rc2-15882"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net451/Microsoft.AspNet.FileProviders.Embedded.dll": {}
+        },
+        "runtime": {
+          "lib/net451/Microsoft.AspNet.FileProviders.Embedded.dll": {}
         }
       },
       "Microsoft.AspNet.FileProviders.Physical/1.0.0-rc1-final": {
@@ -3223,7 +3295,7 @@
           "lib/net451/Microsoft.Extensions.PlatformAbstractions.dll": {}
         }
       },
-      "Microsoft.Extensions.Primitives/1.0.0-rc1-final": {
+      "Microsoft.Extensions.Primitives/1.0.0-rc2-15935": {
         "type": "package",
         "frameworkAssemblies": [
           "Microsoft.CSharp",
@@ -3904,10 +3976,10 @@
           "lib/net451/Microsoft.AspNet.Diagnostics.Abstractions.dll": {}
         }
       },
-      "Microsoft.AspNet.FileProviders.Abstractions/1.0.0-rc1-final": {
+      "Microsoft.AspNet.FileProviders.Abstractions/1.0.0-rc2-15891": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "1.0.0-rc1-final"
+          "Microsoft.Extensions.Primitives": "1.0.0-rc2-15935"
         },
         "frameworkAssemblies": [
           "Microsoft.CSharp",
@@ -3920,6 +3992,42 @@
         },
         "runtime": {
           "lib/net451/Microsoft.AspNet.FileProviders.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.AspNet.FileProviders.Composite/1.0.0-rc2-15891": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.FileProviders.Abstractions": "1.0.0-rc2-15891"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net451/Microsoft.AspNet.FileProviders.Composite.dll": {}
+        },
+        "runtime": {
+          "lib/net451/Microsoft.AspNet.FileProviders.Composite.dll": {}
+        }
+      },
+      "Microsoft.AspNet.FileProviders.Embedded/1.0.0-rc2-15882": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.FileProviders.Abstractions": "1.0.0-rc2-15882"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net451/Microsoft.AspNet.FileProviders.Embedded.dll": {}
+        },
+        "runtime": {
+          "lib/net451/Microsoft.AspNet.FileProviders.Embedded.dll": {}
         }
       },
       "Microsoft.AspNet.FileProviders.Physical/1.0.0-rc1-final": {
@@ -5019,7 +5127,7 @@
           "lib/net451/Microsoft.Extensions.PlatformAbstractions.dll": {}
         }
       },
-      "Microsoft.Extensions.Primitives/1.0.0-rc1-final": {
+      "Microsoft.Extensions.Primitives/1.0.0-rc2-15935": {
         "type": "package",
         "frameworkAssemblies": [
           "Microsoft.CSharp",
@@ -5595,18 +5703,46 @@
         "Microsoft.AspNet.Diagnostics.Abstractions.nuspec"
       ]
     },
-    "Microsoft.AspNet.FileProviders.Abstractions/1.0.0-rc1-final": {
+    "Microsoft.AspNet.FileProviders.Abstractions/1.0.0-rc2-15891": {
       "type": "package",
       "serviceable": true,
-      "sha512": "Tv6YJk78cH+gFipRNjeMpzzUg3t4BQiS0xYVlv/8gVNl4sI6ytAMYYfIbx8pCacIRH5Nx/Tw9GVn28eyw+JZfA==",
+      "sha512": "P8PW/5XEnLZrzHBS7k5qqgWojn0q15OyOVFcdYn9tuRYaXdIo5iylbvgHXWuv1afgAuFBZuZgN2qkQWe+YbpVA==",
       "files": [
         "lib/dotnet5.4/Microsoft.AspNet.FileProviders.Abstractions.dll",
         "lib/dotnet5.4/Microsoft.AspNet.FileProviders.Abstractions.xml",
         "lib/net451/Microsoft.AspNet.FileProviders.Abstractions.dll",
         "lib/net451/Microsoft.AspNet.FileProviders.Abstractions.xml",
-        "Microsoft.AspNet.FileProviders.Abstractions.1.0.0-rc1-final.nupkg",
-        "Microsoft.AspNet.FileProviders.Abstractions.1.0.0-rc1-final.nupkg.sha512",
+        "Microsoft.AspNet.FileProviders.Abstractions.1.0.0-rc2-15891.nupkg",
+        "Microsoft.AspNet.FileProviders.Abstractions.1.0.0-rc2-15891.nupkg.sha512",
         "Microsoft.AspNet.FileProviders.Abstractions.nuspec"
+      ]
+    },
+    "Microsoft.AspNet.FileProviders.Composite/1.0.0-rc2-15891": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "5uig/yrXdKRZvl27qkNVO3rFKjIAW2Vy5CN+f3nLYYfk/LiLpKevX4QlvETlcfJPdsQcHv6GWvJnrHqRxDYdoQ==",
+      "files": [
+        "lib/dotnet5.4/Microsoft.AspNet.FileProviders.Composite.dll",
+        "lib/dotnet5.4/Microsoft.AspNet.FileProviders.Composite.xml",
+        "lib/net451/Microsoft.AspNet.FileProviders.Composite.dll",
+        "lib/net451/Microsoft.AspNet.FileProviders.Composite.xml",
+        "Microsoft.AspNet.FileProviders.Composite.1.0.0-rc2-15891.nupkg",
+        "Microsoft.AspNet.FileProviders.Composite.1.0.0-rc2-15891.nupkg.sha512",
+        "Microsoft.AspNet.FileProviders.Composite.nuspec"
+      ]
+    },
+    "Microsoft.AspNet.FileProviders.Embedded/1.0.0-rc2-15882": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "nLdP1smuIAJPQm4DuZmMI/FLxoa5q3t+SrlsjmVvdud/N7h2DzYf3GNx8C4y43P1t0vMHEvXCoyaQAXvNwdK9g==",
+      "files": [
+        "lib/dotnet5.4/Microsoft.AspNet.FileProviders.Embedded.dll",
+        "lib/dotnet5.4/Microsoft.AspNet.FileProviders.Embedded.xml",
+        "lib/net451/Microsoft.AspNet.FileProviders.Embedded.dll",
+        "lib/net451/Microsoft.AspNet.FileProviders.Embedded.xml",
+        "Microsoft.AspNet.FileProviders.Embedded.1.0.0-rc2-15882.nupkg",
+        "Microsoft.AspNet.FileProviders.Embedded.1.0.0-rc2-15882.nupkg.sha512",
+        "Microsoft.AspNet.FileProviders.Embedded.nuspec"
       ]
     },
     "Microsoft.AspNet.FileProviders.Physical/1.0.0-rc1-final": {
@@ -6471,10 +6607,10 @@
         "Microsoft.Extensions.PlatformAbstractions.nuspec"
       ]
     },
-    "Microsoft.Extensions.Primitives/1.0.0-rc1-final": {
+    "Microsoft.Extensions.Primitives/1.0.0-rc2-15935": {
       "type": "package",
       "serviceable": true,
-      "sha512": "oHWqBARJveyM7LctuqQqvsTC58hxoq0gGnHr6Qsxie71LIkZpfE21IklhSLOsqmv4QIpes/G6k1vZbAQ+cC/nw==",
+      "sha512": "a4DsibpsIXex/DMC5Bs5MoWzx5Znlw1XfC1q50WqTrwu2dRUElHCim+SyUOdkzv1A+60zb+paxGdTP0JG8uVmg==",
       "files": [
         "lib/dotnet5.4/Microsoft.Extensions.Primitives.dll",
         "lib/dotnet5.4/Microsoft.Extensions.Primitives.xml",
@@ -6482,8 +6618,8 @@
         "lib/net451/Microsoft.Extensions.Primitives.xml",
         "lib/netcore50/Microsoft.Extensions.Primitives.dll",
         "lib/netcore50/Microsoft.Extensions.Primitives.xml",
-        "Microsoft.Extensions.Primitives.1.0.0-rc1-final.nupkg",
-        "Microsoft.Extensions.Primitives.1.0.0-rc1-final.nupkg.sha512",
+        "Microsoft.Extensions.Primitives.1.0.0-rc2-15935.nupkg",
+        "Microsoft.Extensions.Primitives.1.0.0-rc2-15935.nupkg.sha512",
         "Microsoft.Extensions.Primitives.nuspec"
       ]
     },
@@ -7402,6 +7538,8 @@
       "Autofac.Extensions.DependencyInjection >= 4.0.0-rc1-177",
       "BookStore.Components >= 1.0.0-*",
       "EntityFramework >= 6.1.3",
+      "Microsoft.AspNet.FileProviders.Composite >= 1.0.0-*",
+      "Microsoft.AspNet.FileProviders.Embedded >= 1.0.0-rc2-15882",
       "Microsoft.AspNet.IISPlatformHandler >= 1.0.0-rc1-final",
       "Microsoft.AspNet.Mvc >= 6.0.0-rc1-final",
       "Microsoft.AspNet.Server.Kestrel >= 1.0.0-rc1-final",
