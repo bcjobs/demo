@@ -47,7 +47,8 @@ namespace Demo.MVC6
             {
                 options.FileProvider = new CompositeFileProvider(
                     new EmbeddedFileProvider(
-                        typeof(BookOfTheMonthViewComponent).GetTypeInfo().Assembly
+                        typeof(BookOfTheMonthViewComponent).GetTypeInfo().Assembly,
+                        "BookStore.Components"
                     ),
                     options.FileProvider
                 );
